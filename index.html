@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do App</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="text-center my-3">
+    <span class="h2 text-info">  ToDo </span>
+    <span class="h2 text-success">List </span>
+  </div>
+  <div class="container">
+    <div class="row">
+      <span>Enter Task</span>
+      <div class="col-sm-12 col-md-10 my-2">
+        <input type="text" class="form-control" id="userTask" placeholder="Task">
+      </div>
+      <div class="col-sm-12 col-md-2 my-2">
+        <button class="btn btn-outline-success w-100" onclick="passingData()" id="createBtn"><i class="fa-solid fa-plus"></i> Create</button>
+        <button class="btn btn-outline-warning w-100" onclick="editDataFromView()" id="editBtn" style="display: none;"><i class="fa-solid fa-pen-to-square"></i>
+          Edit</button>
+      </div>
+    </div>
+    <hr>
+    <div class="userTasks">
+      <!-- <div class="col-sm-3 col-md-1 text-center">
+        <input type="checkbox" id="inputCheckbox" class="btn-check">
+        <label class="btn btn-outline-primary" for="inputCheckbox">Done</label>
+      </div>
+      <div class="col-sm-9 col-md-9">
+        <p id="taskDetail" class="text-center text-break text-capitalize fs-6" style="line-height: 2rem;">Rao Infotech task 1</p>
+      </div>
+      <div class="col-sm-12 col-md-2 text-center">
+        <div class="btn-group" role="group" >
+          <button type="button" class="btn btn-warning">
+            <i style="color: white; font-size: 18px;" class="fa-solid fa-square-pen"></i>
+          </button>
+          <button type="button" class="btn btn-danger">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+
+  <!-- <div class="todo-list">
+    <div class="list-head">
+      <input type="text" class="entered-list" placeholder="Enter a task ">
+      <button class="add-list" onclick="passingData()">Add</button>
+      <button class="edit-list" onclick="editDataFromView()" style="display: none;">Edit</button>
+    </div>
+    <div class="tasks">
+    </div>
+  </div> -->
+
+  <script src="/script.js"></script>
+</body>
+
+</html>
